@@ -1,0 +1,454 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFEDEB;
+  color: #333;
+  font-family: 'Montserrat', 'Lato', sans-serif;
+}
+
+.box-title {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titulo-principal {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;        /* Ajuste o tamanho como preferir */
+  font-weight: 400;
+  text-align: center;     /* Opcional: centraliza o título */
+  margin-bottom: 10px;    /* Espaçamento inferior, se necessário */
+  color: #000000; /* tom romântico tipo lilás ou rosé */
+
+
+}
+
+
+
+header {
+  background-color: #F5D4D1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-family: 'Cursive', sans-serif;
+  color: #e91e63;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Estilo do botão hambúrguer */
+.menu-toggle {
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  nav-left: 20px;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #ff69b4; /* rosa forte */
+  border-radius: 5px;
+}
+
+/* Botão hambúrguer no canto direito */
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute; /* garante que fique no canto */
+  top: 6px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #ff69b4;
+  border-radius: 5px;
+}
+
+/* Menu lateral direito */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -200px; /* começa fora da tela */
+  width: 200px;
+  height: 100%;
+  background-color: #ffc0cb;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral ul li {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.menu-lateral ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+/* Classe para ativar o menu */
+.menu-lateral.ativo {
+  right: 0;
+}
+
+.main-title {
+  text-align: center;
+  margin: 0px 0px;
+}
+
+.main-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.main-title p {
+  font-style: italic;
+  font-size: 1rem;
+  margin: 5px 0 0;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.section .box {
+  background-color: #FFD8D4;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  position: relative;
+  
+}
+
+.box-title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #e91e63;
+  font-family: 'Playfair Display', serif;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  align-self: center;
+  padding: 8px 16px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #d81b60;
+}
+
+.limited-text {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+
+
+.photos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 920px;
+  padding-bottom: 90px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photos-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;        /* Ajuste o tamanho como preferir */
+  font-weight: 400;
+  text-align: center;     /* Opcional: centraliza o título */
+  margin-bottom: 10px;    /* Espaçamento inferior, se necessário */
+  color: #000000; /* tom romântico tipo lilás ou rosé */
+  padding-top: 50px;
+}
+
+.photo-scroll-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.scroll-arrow {
+  font-size: 18px;
+  color: #e91e63;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.scroll-left {
+  margin-right: 10px;
+}
+
+.scroll-right {
+  margin-left: 10px;
+}
+
+.photos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd3a;
+  border-radius: 2px;
+  padding: 20px;
+  max-width: 1420px; /* Total: 3 fotos + 260px em cada lado */
+  margin: 0 auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.photo-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 5px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 90px;
+}
+
+
+.photo-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.photo-scroll img {
+  width: 300px;
+  height: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+
+.subtitle-section {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.text-box {
+  background-color: #FFD8D4;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', 'Lato', sans-serif;
+}
+
+.bottom-section {
+  background-color: #FFEDEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.pair img {
+  width: 160px;
+  height: 160px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.letra {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  padding: 10px;
+  color: #000;
+  margin: 10px;
+}
+
+.plus {
+  font-size: 48px;
+  color: #000;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+
+.bottom-section .photo {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-section .photo1 {
+  top: 30px;
+  left: 100px;
+  transform: rotate(-2deg);
+}
+
+.bottom-section .photo2 {
+  bottom: 30px;
+  right: 100px;
+  transform: rotate(1deg);
+}
+
+.bottom-section .symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bottom-section .letter-r {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  font-size: 40px;
+  font-family: 'Cursive', serif;
+  color: #000;
+}
+
+.bottom-section .letter-g {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  font-family: 'Cursive', serif;
+  color: #000;
+}
+
+footer {
+    background-color: #FFE7E4;
+    color: #af9c9a;
+    text-align: center;
+    padding: 0.1px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .photos-section {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .photo-scroll {
+    padding: 0 20px;
+  }
+
+  .photo-scroll img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .scroll-arrow {
+    display: none;
+  }
+}
